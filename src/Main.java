@@ -1,11 +1,10 @@
 public class Main {
 
-    public static void main(String[] args) {
-        int deposit = 13_676;
-        int forEveryDeposited = 20;
+    public static <BonusMilesService> void main(String[] args) {
+        BonusMilesService service = new BonusMilesService();
+        int price = 10_000;
+        int miles = service.calculete(price);
+        System.out.println(miles);
 
-
-        System.out.println("Количество бонусов составляет");
-        System.out.println(deposit / forEveryDeposited);
     }
 }
