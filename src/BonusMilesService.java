@@ -3,5 +3,3 @@ public class BonusMilesService {
         return price / 20;
     }
 }
-
-git
